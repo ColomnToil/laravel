@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +18,4 @@ Route::get('/', function () {
     return 'aaaaaaaaaaaaaaa';
 });
 
-Route::get('my_page', function(){
-    return 'my page';
-});
+Route::get('my_page', 'MyPlaceController@index');
